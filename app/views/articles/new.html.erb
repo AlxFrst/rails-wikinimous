@@ -1,0 +1,6 @@
+<h2>New task</h2>
+<%= simple_form_for(@article) do |f| %>
+  <%= f.input :title %>
+  <%= f.input :content %>
+  <%= f.submit class:"btn btn-primary mt-3"%><%= link_to "back", articles_path, class:"btn btn-warning mt-3"%>
+<% end %>
